@@ -12,12 +12,25 @@ def main():
     ls_cmd = "git ls-tree -r main --name-only"
     file_names = [
         "./Breakdown.txt",
-        "./CppBenchmark/Source/CppBenchmark.hpp",
-        "./CppBenchmark/Source/CppBenchmark.cpp",
-        "./CppBenchmark/Tests/CppBenchmarkTests.cpp",
-        "./CppBenchmark/Benchmarks/CppBenchmarkBenchmarks.cpp",
+        # Rust Benchmarking Resources
+        "./RustySaw/benches/split_on.rs",
+        # Rust Tablesaw Implementation
+        "./RustySaw/src/core/column.rs",
+        "./RustySaw/src/core/mod.rs",
+        "./RustySaw/src/core/selection.rs",
+        "./RustySaw/src/core/standard_table_slice_group.rs",
+        "./RustySaw/src/core/table_slice.rs",
+        "./RustySaw/src/core/table.rs",
+        "./RustySaw/src/main.rs",
+        "./RustySaw/src/lib.rs",
+        # Java Benchmarking Resources
         "./JavaBenchmark/src/main/java/uk/ac/ic/doc/spe/MyBenchmark.java",
+        "./JavaBenchmark/src/main/java/uk/ac/ic/doc/spe/IntegerDataSupplier.java",
+        "./JavaBenchmark/src/main/java/uk/ac/ic/doc/spe/StandardTableSliceGroupBenchmarkable.java",
+        # Target Application
         "./TargetApplication/src/main/java/uk/ac/ic/doc/spe/covidsaw/App.java",
+        # Report
+        "./Report.txt"
     ]
     dir_name = "./out"
     out_file_name = join(dir_name, "report.txt")
